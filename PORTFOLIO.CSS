@@ -1,0 +1,35 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.NavBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+
+}
+
+.NavBar .logo{
+    padding: 5px;
+    font-size: 30px;
+}
+
+.NavBar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.NavBar ul li {
+    padding: 15px;
+        a{
+            cursor: pointer;
+        }
+}
