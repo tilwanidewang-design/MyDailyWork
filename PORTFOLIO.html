@@ -1,33 +1,207 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="PORTFOLIO.CSS" \>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dewang Tilwani - Portfolio</title>
+    <meta name="description"
+        content="Personal portfolio of Dewang Tilwani, a passionate web developer showcasing projects, skills, and experience." />
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="PORTFOLIO.CSS" />
 </head>
+
 <body>
-    
-    <nav class="NavBar">
-        <div class="logo">Dewang Tilwani</div>
-        <ul>
-            <li><a>Skills</a></li>
-            <li><a>Open Source</a></li>
-            <li><a>Project</a></li>
-            <li><a>Achievments</a></li>
-            <li><a>Blog</a></li>
-            <li><a>Talks</a></li>
-            <li><a>Contact Me</a></li>
-        </ul>
-        
-    </nav>
+    <!-- Header Section -->
+    <header class="NavBar">
+        <div class="logo">Dewang.</div>
+        <nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section class="about"></section>
-    <section class="skills"></section>
-    <section class="projects"></section>
-    <section class="resume"></section>
-    <section class="contact"></section>
+    <main>
+        <!-- Hero Section (Introduction/Tagline) -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <p class="tagline">Hi, my name is</p>
+                <h1>Dewang Tilwani.</h1>
+                <h2 class="subtitle">I build things for the web.</h2>
+                <p class="intro">I'm a passionate web developer focused on creating interactive, accessible, and
+                    beautiful digital experiences. I love turning complex problems into elegant interfaces.</p>
+                <a href="#about" class="btn primary-btn">More About Me</a>
+            </div>
+        </section>
 
-    <footer></footer>
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="Dewang.png" alt="Dewang Tilwani Portrait" />
+                </div>
+                <div class="about-text">
+                    <p>Hello! I'm Dewang, a web developer with a passion for bringing ideas to life on the internet. My
+                        journey in web development started with a curiosity to understand how websites work, which
+                        quickly evolved into a deep love for coding, design, and user experience.</p>
+                    <p>I have a strong background in building responsive and dynamic web applications. My focus is on
+                        writing clean, elegant, and efficient code to deliver the best possible outcome. When I'm not at
+                        my computer, I'm usually exploring new tech trends, reading, or enjoying the outdoors.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-java"></i>
+                    <span>Java</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <span>MySQL</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-php"></i>
+                    <span>PHP</span>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-git-alt"></i>
+                    <span>Git</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <h2 class="section-title">Some Things I've Built</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=60"
+                            alt="E-Commerce Platform Project" />
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A fully functional online store featuring product management, a dynamic shopping cart, and
+                            secure user authentication.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=60"
+                            alt="Inventory Management Dashboard" />
+                    </div>
+                    <div class="project-info">
+                        <h3>Inventory Management Dashboard</h3>
+                        <p>A comprehensive system for tracking stock levels, managing purchase orders, and generating
+                            real-time analytics reports.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=60"
+                            alt="Personal Finance Tracker" />
+                    </div>
+                    <div class="project-info">
+                        <h3>Personal Finance Tracker</h3>
+                        <p>An intuitive web app that helps users track their daily expenses, set monthly budgets, and
+                            visualize their spending habits.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="resume">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-content">
+                <p>Interested in exploring my complete work history, educational background, and professional
+                    qualifications? You can view and download my full resume below.</p>
+                <a href="https://drive.google.com/file/d/1ovqDd_oArKPTU44Fpid5_jr3_mZiBrnR/view?usp=drive_link"
+                    class="btn secondary-btn" target="_blank" download><i class="fas fa-file-download"></i> Download
+                    Resume
+                    (PDF)</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2 class="section-title">Get In Touch</h2>
+            <p>I'm currently looking for new opportunities and my inbox is always open. Whether you have a question, a
+                project proposal, or just want to say hi, I'll try my best to get back to you!</p>
+            <div class="contact-info">
+                <a href="mailto:tilwanidewang@gmail.com"><i class="fas fa-envelope"></i> tilwanidewang@gmail.com</a>
+                <a href="tel:+919510333959"><i class="fas fa-phone"></i> +91 9510333959</a>
+            </div>
+            <a href="mailto:tilwanidewang@gmail.com" class="btn primary-btn">Say Hello</a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Dewang Tilwani. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/tilwanidewang-design" aria-label="GitHub" target="_blank"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/dewang-tilwani-141b6735a/" aria-label="LinkedIn" target="_blank"><i
+                    class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navList = document.querySelector('.nav-list');
+
+        mobileMenu.addEventListener('click', () => {
+            navList.classList.toggle('active');
+            mobileMenu.querySelector('i').classList.toggle('fa-bars');
+            mobileMenu.querySelector('i').classList.toggle('fa-times');
+        });
+
+        // Close menu when a link is clicked
+        document.querySelectorAll('.nav-list a').forEach(link => {
+            link.addEventListener('click', () => {
+                navList.classList.remove('active');
+                mobileMenu.querySelector('i').classList.add('fa-bars');
+                mobileMenu.querySelector('i').classList.remove('fa-times');
+            });
+        });
+    </script>
 </body>
+
 </html>
